@@ -1,16 +1,9 @@
-## Setup 
-Add a ```.env```-file to root with the following properties: 
-* `PORT` - server will run on this port 
-* `CSE ID` - ADD LINK
-* `Google Api Key`- ADD LINK
-
-
 
 Huskeliste: 
 
 En fil skal mates inn i ascii-art.
-Finn ut av Googe-images. 
-last ned med download-file, fra url etter google-images-søk 
+Finn ut av unplash-API 
+last ned med download-file, fra url etter unsplas-API.  
 Filen som kommer derfra kan mates inn i ascii-art. 
 
 "ascii-art": "^1.5.0",
