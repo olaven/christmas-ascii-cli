@@ -1,17 +1,35 @@
 const ascii = require('ascii-art');
 const download = require('download-file');
-const url = "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.90xa4ZK6uzYFii7yWpIhdwHaEK%26pid%3D15.1&f=1";
-
+const imageSearch = require('g-i-s'); 
 
 const options = {
+    searchTerms : ["christmas", "christmas cartoon", "christmassy"], 
     download: {
         filename: "image.png"
     },
     ascii: {
-        filepath: "./image.png", 
-        alphabet: "variant4"
+        filepath: "./image.png",
+        alphabet: "ultra-wide"
     }
 }
+
+const getRandomFrom = (array) => {
+    const index = Math.floor(Math.random() * array.length); 
+    return array[index]; 
+}
+
+
+
+imageSearch(getRandomFrom(options.searchTerms), (error, results) => {
+
+    let image = getRandomFrom(results); 
+    download(image.url, options.download, (error) => {
+        if (error) throw error;
+        displayAsAscii("image.png");
+    });
+}); 
+
+
 
 const displayAsAscii = (filename) => {
     const image = new ascii.Image(options.ascii);
@@ -22,7 +40,3 @@ const displayAsAscii = (filename) => {
     }); 
 }
 
-download(url, options.download, (error) => {
-    if (error) throw error;
-    displayAsAscii("image.png"); 
-}); 
