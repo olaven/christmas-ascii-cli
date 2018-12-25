@@ -1,5 +1,8 @@
 # Christmas Ascii 
+Displays a christmas-themed image in the terminal. 
 
-Displays a christmas-related image as ascii-art, and that's it. 
+## Installation 
+`npm install christmas-ascii-cli`
 
-Bringing that christmas feeling with a tiny CLI-app! 
+## Usage 
+`christmas-ascii-cli` 

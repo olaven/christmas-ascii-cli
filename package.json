@@ -1,5 +1,5 @@
 {
-  "name": "christmas-ascii",
+  "name": "christmas-ascii-cli",
   "version": "0.1.0",
   "description": "Christmas themed ascii-art as CLI.",
   "main": "app.js ",
@@ -7,7 +7,7 @@
     "start": "node index.js"
   },
   "bin": {
-    "christmas-ascii": "./index.js"
+    "christmas-ascii-cli": "./index.js"
   },
   "repository": "https://github.com/olaven/christmas-ascii.git",
   "author": "olaven <olavsundfoer@gmail.com>",
