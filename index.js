@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const ascii = require('ascii-art');
 const download = require('download-file');
 const imageSearch = require('g-i-s'); 

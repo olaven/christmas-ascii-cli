@@ -6,6 +6,9 @@
   "scripts": {
     "start": "node index.js"
   },
+  "bin": {
+    "christmas-ascii": "./index.js"
+  },
   "repository": "https://github.com/olaven/christmas-ascii.git",
   "author": "olaven <olavsundfoer@gmail.com>",
   "license": "MIT",
